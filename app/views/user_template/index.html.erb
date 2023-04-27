@@ -1,3 +1,5 @@
+
+
 <h1>List of users</h1>
 
 <table border="1">
@@ -14,16 +16,18 @@
 
   <% @list_of_users.each do |a_user| %>
   <tr>
-    <th>
+    <td>
       <%= a_user.id%>
-    </th>
-    <th>
+    </td>
+    <td>
       <%= a_user.username%>
-    </th>
-    <th>
-      <a href="/movies/<%= a_user.username %>">
+    </td>
+    <td>
+      <a href="/users/<%= a_user.username %>">
         Show details
-    </th>
+    </td>
   </tr>
   <% end %>
 </table>
+
+</body>

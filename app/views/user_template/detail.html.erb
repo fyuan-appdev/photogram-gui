@@ -7,7 +7,15 @@
 
   <dt>Edit user</dt>
 
-  <dd>TBD form</dd>
+  <dd>
+    <form action="/update_user/<%= @user.id%>" >
+      <label for="browser_username">Username</label>
+      <input id="browser_username" type="text" name="input_username" placeholder="Enter a username..." value= <%= @user.username%>>
+
+      <button>Update user</button>
+    </form>
+  </dd>
+
 </dl>
 
 
